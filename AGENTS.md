@@ -40,6 +40,11 @@ The owner approved the following design:
 
 ## Coding rules
 
+- Use semantic HTML5 elements, including `header`, `nav`, `main`, `section`,
+  and `footer`, to organize content logically. Use `article` for self-contained
+  content and `aside` for supporting content when appropriate.
+- Use exactly one `h1` per page. Organize section headings in a logical
+  hierarchy using `h2` and `h3` as needed.
 - Use plain HTML, CSS, and JavaScript only. No frameworks, component libraries,
   CSS frameworks, package dependencies, or build tools.
 - Use relative file paths for local links, images, stylesheets, and scripts,
