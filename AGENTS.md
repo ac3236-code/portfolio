@@ -2,12 +2,13 @@
 
 ## Site and planned pages
 
-Build a personal SDET (Software Development Engineer in Test) portfolio that
-introduces the owner, showcases testing and automation projects, and helps
-potential employers get in touch.
+Build a personal portfolio for Alexis Casique, a biomedical engineering student
+who transferred from RVCC to NJIT and is pursuing a bachelor's degree. Alexis
+is interested in a career in prosthetics development or research. Introduce the
+owner, showcase verified projects, and help potential employers get in touch.
 
 - `index.html`: Home page with an introduction, key skills, and featured projects.
-- `about.html`: Background, learning journey, and testing interests.
+- `about.html`: Background, education, and interest in prosthetics.
 - `projects.html`: Project descriptions, tools used, and links to repositories
   or demos when available.
 - `contact.html`: Owner-provided contact details and professional profile links.

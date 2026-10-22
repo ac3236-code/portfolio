@@ -1,11 +1,11 @@
-# Alexis Casique — SDET portfolio
+# Alexis Casique — Personal portfolio
 
-A responsive portfolio built with plain HTML and CSS. No dependencies or build step are required. Background, skills, projects, and public contact details remain marked as pending owner content.
+A responsive portfolio built with plain HTML and CSS for a biomedical engineering student at NJIT, interested in prosthetics development or research. No dependencies or build step are required. Skills, projects, and public contact details remain marked as pending owner content.
 
 ## Site structure
 
 - `index.html`: introduction, testing themes, and project spotlight.
-- `about.html`: background, learning journey, and interests placeholders.
+- `about.html`: owner-provided background, education, and career interests.
 - `projects.html`: future case-study space.
 - `contact.html`: space for approved public contact details.
 - `skills.html`: space for confirmed technical skills and proficiency levels.
@@ -23,4 +23,4 @@ Before publishing, review desktop and mobile layouts, keyboard navigation, links
 
 ## Content still needed
 
-Provide an introduction, background, education, interests, technical skills with proficiency levels, and approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
+Provide technical skills with proficiency levels and approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
