@@ -31,6 +31,8 @@ The owner approved the following design:
   links and primary buttons (`#1D4ED8`).
 - Fonts: use `Arial, Helvetica, sans-serif` for headings and body text, with
   `Consolas, "Courier New", monospace` for code snippets.
+- Offer a dark theme with navy backgrounds, light text, and pale blue links.
+  Keep theme controls and keyboard focus visible in both themes.
 - Style: clean, professional, and minimal, with generous spacing, clear headings,
   subtle borders, and lightly rounded project cards.
 - Layout: responsive, mobile-first pages with a centered content area and
@@ -53,6 +55,8 @@ The owner approved the following design:
 - Keep shared styles in `css/styles.css`, scripts in `js/main.js`, and images
   in `images/`.
 - Keep content usable without JavaScript; add JavaScript only for interactions.
+- Use an accessible mobile menu with an expanded state and Escape handling;
+  keep navigation visible without JavaScript and on laptop screens.
 - Keep changes focused on the task and preserve unrelated work.
 - Never commit secrets or private information.
 - Update `README.md` when the site structure or local preview instructions change.
