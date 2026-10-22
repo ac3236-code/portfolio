@@ -17,7 +17,7 @@ credentials, project results, or contact details.
 
 ## Design
 
-The following is a proposed design for the owner to review and edit:
+The owner approved the following design:
 
 - Colors: off-white background (`#F8FAFC`), white cards (`#FFFFFF`), dark navy
   headings and navigation (`#0F172A`), slate body text (`#334155`), and blue
@@ -63,6 +63,9 @@ The following is a proposed design for the owner to review and edit:
 
 ## Owner review
 
-This file was drafted with Codex. The repository owner should personally review
-and edit the site plan and design to reflect their own preferences before using
-them as the final project direction.
+This file was drafted with Codex, and the owner explicitly approved it in the
+project conversation. Personal review and edits belong to the owner; Codex
+cannot perform that step on the owner's behalf.
+
+Update this file whenever the site plan, design, or project rules change so it
+continues to reflect the owner's direction.
