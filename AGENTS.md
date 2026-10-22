@@ -11,6 +11,12 @@ potential employers get in touch.
 - `projects.html`: Project descriptions, tools used, and links to repositories
   or demos when available.
 - `contact.html`: Owner-provided contact details and professional profile links.
+- `skills.html`: Owner-confirmed technical skills and proficiency levels.
+
+The Projects page must showcase at least three owner-provided projects, each
+with a description, image or screenshot, and repository or demo links when
+available. About must include education. Do not present placeholder content as
+completed projects or verified personal information.
 
 Use consistent navigation and a footer on every page. Do not invent experience,
 credentials, project results, or contact details.
