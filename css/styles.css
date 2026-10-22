@@ -34,6 +34,7 @@ h3 { font-size: 22px; }
 p { margin: 0 0 20px; }
 img { display: block; max-width: 100%; height: auto; }
 main { overflow-wrap: anywhere; }
+main:focus { outline: 3px solid var(--blue); outline-offset: 4px; }
 .eyebrow { color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .14em; }
 .hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: 30px; align-items: center; padding-block: 45px; }
 .lead { font-size: 20px; max-width: 650px; }

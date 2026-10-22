@@ -65,6 +65,13 @@ The owner approved the following design:
 
 - Check local navigation, asset paths, and any JavaScript interactions.
 - Check mobile and desktop layouts, keyboard navigation, and readable contrast.
+- Give every image an `alt` attribute: describe meaningful content and use
+  `alt=""` only for decorative images. Keep every image file under 500 KB.
+- Meet WCAG AA contrast: at least 4.5:1 for normal text and 3:1 for large text
+  and essential control indicators. Check both light and dark themes.
+- Test Tab, Shift+Tab, Enter, Space, Escape, skip links, and visible focus.
+- Run Lighthouse in Chrome DevTools, aiming for Accessibility 90 or higher.
+  Record the actual score and tested page; if unavailable, report the blocker.
 - Use available checks; do not claim tests or browser checks ran when they did not.
 
 ## Git workflow

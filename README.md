@@ -11,6 +11,7 @@ A responsive portfolio built with plain HTML and CSS for a biomedical engineerin
 - `skills.html`: space for confirmed technical skills and proficiency levels.
 - `css/styles.css`: shared styles and mobile layouts.
 - `js/main.js`: responsive menu and light/dark mode controls.
+- `docs/accessibility-review.md`: contrast results, audit limits, and browser checklist.
 
 ## Local preview
 
