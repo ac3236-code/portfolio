@@ -33,4 +33,4 @@ Before publishing, review desktop and mobile layouts, keyboard navigation, links
 
 ## Content still needed
 
-Provide proficiency levels for skills other than Excel and approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
+Provide proficiency levels for Python, laboratory work, and circuits, plus approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
