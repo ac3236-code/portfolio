@@ -58,3 +58,24 @@ Added three viewers containing 12 PDF-derived JPEG pages. All images have descri
 
 Static checks passed local links, page counts, and image sizes. Simulated DOM checks passed initial page state, Previous/Next, page bounds, zoom in/out, zoom bounds (100%-300%), and Fit width. Headless Chrome screenshots were inspected at 1440x1100 and 820x1180. These are viewport-size checks, not physical tablet tests. Manual keyboard/touch traversal and a new Lighthouse score remain unverified; a Lighthouse runner is not installed in this environment.
 Headless Chrome DOM checks at both viewport sizes also confirmed page 2 selection, 150% zoom, horizontal scrolling confined to the viewer, and no document-wide horizontal overflow.
+
+## Persian navy palette - October 29, 2026
+
+This palette supersedes the original palette table above. Calculated WCAG text pairs all exceed 4.5:1. Focus colors use the same passing foreground colors on their surrounding surfaces.
+
+| Pair | Ratio |
+| --- | --- |
+| Off-white headings / Persian navy | 13.46:1 |
+| Body / Persian navy | 11.74:1 |
+| Links and focus / Persian navy | 10.12:1 |
+| Off-white headings / dark navy | 16.48:1 |
+| Body / dark navy | 14.38:1 |
+| Links and focus / dark navy | 12.40:1 |
+| Navy headings and button text / off-white | 13.46:1 |
+| Insert body / off-white | 9.40:1 |
+| Insert links and focus / off-white | 9.01:1 |
+| Insert links / white PDF captions | 9.75:1 |
+| Status links / tint | 8.08:1 |
+| Button text / hover | 12.07:1 |
+
+This update changes shared colors only. No new Lighthouse score or manual keyboard test is claimed.

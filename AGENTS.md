@@ -28,13 +28,9 @@ credentials, project results, or contact details.
 
 The owner approved the following design:
 
-- Colors: off-white background (`#F8FAFC`), white cards (`#FFFFFF`), dark navy
-  headings and navigation (`#0F172A`), slate body text (`#334155`), and blue
-  links and primary buttons (`#1D4ED8`).
-- Fonts: use `Arial, Helvetica, sans-serif` for headings and body text, with
-  `Consolas, "Courier New", monospace` for code snippets.
-- Offer a dark theme with navy backgrounds, light text, and pale blue links.
-  Keep theme controls and keyboard focus visible in both themes.
+- Colors: Persian navy blue background (`#17245C`), off-white cards, highlighted text boxes, and buttons (`#F8F6EF`). Use off-white headings, light body text, and pale blue links on navy; use navy headings and links with slate-navy body text inside off-white inserts.
+- Fonts: use `Arial, Helvetica, sans-serif` for headings and body text, with `Consolas, "Courier New", monospace` for code snippets.
+- Offer a deeper navy dark theme (`#0B1538`) while retaining off-white inserts and buttons. Keep theme controls and keyboard focus visible in both themes.
 - Style: clean, professional, and minimal, with generous spacing, clear headings,
   subtle borders, and lightly rounded project cards.
 - Layout: responsive, mobile-first pages with a centered content area and
