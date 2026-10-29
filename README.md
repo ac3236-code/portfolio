@@ -1,6 +1,6 @@
 # Alexis Casique — Personal portfolio
 
-A responsive portfolio built with plain HTML and CSS for a biomedical engineering student at NJIT, interested in prosthetics development or research. No dependencies or build step are required. Skills, projects, and public contact details remain marked as pending owner content.
+A responsive portfolio built with plain HTML and CSS for a biomedical engineering student at NJIT, interested in prosthetics development or research. No dependencies or build step are required. Owner-confirmed skills are listed on the Skills page. Projects and public contact details remain pending owner content.
 
 ## Site structure
 
@@ -33,4 +33,4 @@ Before publishing, review desktop and mobile layouts, keyboard navigation, links
 
 ## Content still needed
 
-Provide technical skills with proficiency levels and approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
+Provide proficiency levels for skills other than Excel and approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
