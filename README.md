@@ -1,12 +1,12 @@
 # Alexis Casique — Personal portfolio
 
-A responsive portfolio built with plain HTML and CSS for a biomedical engineering student at NJIT, interested in prosthetics development or research. No dependencies or build step are required. Owner-confirmed skills are listed on the Skills page. Projects and public contact details remain pending owner content.
+A responsive portfolio built with plain HTML and CSS for a biomedical engineering student at NJIT, interested in prosthetics development or research. No dependencies or build step are required. Owner-confirmed skills are listed on the Skills page. Three coursework notebooks are featured on the Projects page. Public contact details remain pending owner content.
 
 ## Site structure
 
 - `index.html`: introduction, testing themes, and project spotlight.
 - `about.html`: owner-provided background, education, and career interests.
-- `projects.html`: future case-study space.
+- `projects.html`: three Python coursework entries with code-excerpt images and notebook downloads.
 - `contact.html`: space for approved public contact details.
 - `skills.html`: space for confirmed technical skills and proficiency levels.
 - `css/styles.css`: shared styles and mobile layouts.
@@ -33,4 +33,8 @@ Before publishing, review desktop and mobile layouts, keyboard navigation, links
 
 ## Content still needed
 
-Provide proficiency levels for Python, laboratory work, and circuits, plus approved public contact details. At least three real projects are required, with descriptions, images or screenshots, and links when available. These requirements are pending owner content; the current placeholders do not satisfy them.
+Provide proficiency levels for Python, laboratory work, and circuits, plus approved public contact details. Project entries now document the three owner-supplied coursework notebooks. The source has not been independently executed; setup requirements and limitations are noted on the Projects page.
+
+## Project assets
+
+Code-excerpt images live in images/. Downloadable source notebooks live in notebooks/. Saved outputs and metadata are removed from the public copies; the original files are unchanged. API keys must be supplied through Colab secrets. No keys are included.
