@@ -19,7 +19,7 @@ with a description, image or screenshot, and repository or demo links when
 available. About must include education. Do not present placeholder content as
 completed projects or verified personal information.
 
-Project PDF exports are displayed as responsive page images with page navigation, zoom in/out, and a fit-width control for tablet and desktop readers. Keep full-size image links and a usable no-JavaScript fallback.
+Project PDF exports are displayed as responsive page images with page navigation, zoom in/out, and a fit-width control for phone and desktop readers. On phones, use touch-friendly controls and keep zoomed content scrolling inside its viewer. Keep full-size image links and a usable no-JavaScript fallback.
 
 Use consistent navigation and a footer on every page. Do not invent experience,
 credentials, project results, or contact details.

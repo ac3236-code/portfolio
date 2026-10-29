@@ -99,6 +99,12 @@ footer { border-top: 1px solid var(--line); padding-block: 25px; }
   .note, .card, .empty, .callout { padding: 20px; }
   .lead { font-size: 18px; }
   h2 { font-size: 26px; }
+  .project-viewer { margin-inline: -10px; }
+  .project-viewer summary, .project-viewer > p { padding-inline: 4px; }
+  .viewer-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .viewer-controls button { width: 100%; min-height: 48px; padding: 10px 6px; }
+  .viewer-controls [data-viewer="fit"], .viewer-status { grid-column: 1 / -1; }
+  .viewer-viewport { max-height: 65vh; max-height: 65dvh; }
 }
 
 /* Interactive controls are revealed by JavaScript; links remain visible without it. */

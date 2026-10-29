@@ -79,3 +79,9 @@ This palette supersedes the original palette table above. Calculated WCAG text p
 | Button text / hover | 12.07:1 |
 
 This update changes shared colors only. No new Lighthouse score or manual keyboard test is claimed.
+
+## Phone PDF viewers - October 29, 2026
+
+Owner clarified that phone support was intended. Added a two-column phone control grid with 48px minimum button heights, a full-width Fit width button, and wider page viewing space within cards. Updated the on-page phone instructions.
+
+Headless Chrome frame checks at actual 320px and 390px viewport widths passed for all three viewers: all page images loaded, Next selected page 2, zoom created internal scrolling, Fit width removed horizontal scrolling, buttons met the 44px touch-target check, and the Projects page had no horizontal overflow. The 320px viewer screenshot was inspected. Browser frames were used because headless Chrome clamps its outer window to a minimum width of 500px. These checks do not replace physical iOS/Android touch testing. No new Lighthouse score is claimed.

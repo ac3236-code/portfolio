@@ -37,7 +37,7 @@ Provide proficiency levels for Python, laboratory work, and circuits, plus appro
 
 ## Project assets
 
-PDF page images live in images/projects/. Each project includes a responsive viewer with page navigation, 100%-300% zoom, and Fit width. Touch users can swipe the zoomed page; keyboard users can focus its scroll region and use arrow keys. Without JavaScript, all pages remain visible in the expanded viewer, and full-size image links remain available. Images are under 500 KB each. Browser print headers and footers are cropped from the PDF renders. Downloadable source notebooks live in notebooks/. Saved outputs and metadata are removed from the public copies; the original files are unchanged. API keys must be supplied through Colab secrets. No keys are included.
+PDF page images live in images/projects/. Each project includes a responsive viewer with page navigation, 100%-300% zoom, and Fit width. Phone layouts use a two-column grid of touch-friendly zoom and page buttons, with Fit width on its own row. Touch users can swipe the zoomed page; keyboard users can focus its scroll region and use arrow keys. Without JavaScript, all pages remain visible in the expanded viewer, and full-size image links remain available. Images are under 500 KB each. Browser print headers and footers are cropped from the PDF renders. Downloadable source notebooks live in notebooks/. Saved outputs and metadata are removed from the public copies; the original files are unchanged. API keys must be supplied through Colab secrets. No keys are included.
 
 ## Color theme
 
