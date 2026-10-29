@@ -33,6 +33,22 @@ h2 { font-size: 30px; }
 h3 { font-size: 22px; }
 p { margin: 0 0 20px; }
 img { display: block; max-width: 100%; height: auto; }
+.project-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 30px; margin-top: 30px; }
+.project-preview { width: 100%; max-width: 320px; border: 1px solid var(--line); }
+.project-viewer { clear: both; margin-top: 24px; }
+.project-viewer summary { color: var(--blue); cursor: pointer; padding: 12px 0; font-weight: 700; }
+.project-viewer summary:focus-visible, .viewer-viewport:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.viewer-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding-block: 12px; }
+.viewer-controls button { min-height: 44px; padding: 8px 14px; font: inherit; border: 1px solid var(--body); border-radius: 5px; background: var(--surface); color: var(--ink); cursor: pointer; }
+.viewer-controls button[aria-disabled="true"] { cursor: default; border-style: dashed; }
+.viewer-status { flex-basis: 100%; font-weight: 700; }
+.viewer-viewport { max-height: 75vh; max-height: 75dvh; overflow: auto; border: 1px solid var(--body); background: #ffffff; color: #0f172a; }
+.pdf-page { margin: 0; width: var(--page-zoom, 100%); }
+.pdf-page img { width: 100%; max-width: none; }
+.pdf-page figcaption { padding: 10px; font-size: 14px; }
+@media (min-width: 700px) {
+  .project-preview { float: right; width: 30%; margin: 0 0 24px 32px; }
+}
 main { overflow-wrap: anywhere; }
 main:focus { outline: 3px solid var(--blue); outline-offset: 4px; }
 .eyebrow { color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .14em; }

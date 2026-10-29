@@ -51,3 +51,10 @@ Actual Tab/Shift+Tab traversal, Enter/Space activation, visible focus, responsiv
 2. At a viewport below 761px, activate Menu with Enter and Space, traverse links, and use Escape to close it and restore focus. Test resizing across 760px while focus is in the menu.
 3. Toggle Dark mode with the keyboard and check visible focus and readability in both themes. Confirm navigation remains usable with JavaScript disabled.
 4. Serve this folder on localhost using an available static server, open Chrome DevTools, choose Lighthouse (under More tools if needed), select Accessibility and Mobile, then Analyze page load. Repeat for Desktop and both themes on all pages. Aim for at least 90; fix reported issues and rerun. Save actual scores and reports here.
+
+## PDF project viewers - October 29, 2026
+
+Added three viewers containing 12 PDF-derived JPEG pages. All images have descriptive alternatives and are below 500,000 bytes. PDF text review found references to Colab secrets, with no API key values. Browser print headers and footers were cropped from the page images. Original PDFs were not published.
+
+Static checks passed local links, page counts, and image sizes. Simulated DOM checks passed initial page state, Previous/Next, page bounds, zoom in/out, zoom bounds (100%-300%), and Fit width. Headless Chrome screenshots were inspected at 1440x1100 and 820x1180. These are viewport-size checks, not physical tablet tests. Manual keyboard/touch traversal and a new Lighthouse score remain unverified; a Lighthouse runner is not installed in this environment.
+Headless Chrome DOM checks at both viewport sizes also confirmed page 2 selection, 150% zoom, horizontal scrolling confined to the viewer, and no document-wide horizontal overflow.

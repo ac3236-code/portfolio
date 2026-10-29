@@ -6,7 +6,7 @@ A responsive portfolio built with plain HTML and CSS for a biomedical engineerin
 
 - `index.html`: introduction, testing themes, and project spotlight.
 - `about.html`: owner-provided background, education, and career interests.
-- `projects.html`: three Python coursework entries with code-excerpt images and notebook downloads.
+- `projects.html`: three Python coursework entries with PDF page images, zoomable viewers, and notebook downloads.
 - `contact.html`: space for approved public contact details.
 - `skills.html`: space for confirmed technical skills and proficiency levels.
 - `css/styles.css`: shared styles and mobile layouts.
@@ -37,4 +37,4 @@ Provide proficiency levels for Python, laboratory work, and circuits, plus appro
 
 ## Project assets
 
-Code-excerpt images live in images/. Downloadable source notebooks live in notebooks/. Saved outputs and metadata are removed from the public copies; the original files are unchanged. API keys must be supplied through Colab secrets. No keys are included.
+PDF page images live in images/projects/. Each project includes a responsive viewer with page navigation, 100%-300% zoom, and Fit width. Touch users can swipe the zoomed page; keyboard users can focus its scroll region and use arrow keys. Without JavaScript, all pages remain visible in the expanded viewer, and full-size image links remain available. Images are under 500 KB each. Browser print headers and footers are cropped from the PDF renders. Downloadable source notebooks live in notebooks/. Saved outputs and metadata are removed from the public copies; the original files are unchanged. API keys must be supplied through Colab secrets. No keys are included.

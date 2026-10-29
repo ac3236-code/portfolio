@@ -1,4 +1,38 @@
 (() => {
+  document.querySelectorAll('.project-viewer').forEach((viewer) => {
+    const pages = [...viewer.querySelectorAll('.pdf-page')];
+    const controls = viewer.querySelector('.viewer-controls');
+    const viewport = viewer.querySelector('.viewer-viewport');
+    const status = viewer.querySelector('.viewer-status');
+    let page = 0;
+    let zoom = 100;
+    const update = () => {
+      pages.forEach((figure, index) => { figure.hidden = index !== page; });
+      viewport.style.setProperty('--page-zoom', `${zoom}%`);
+      status.textContent = `Page ${page + 1} of ${pages.length} · ${zoom}%`;
+      // Keep page buttons focusable at the ends so focus never disappears.
+      controls.querySelector('[data-viewer="previous"]').setAttribute('aria-disabled', String(page === 0));
+      controls.querySelector('[data-viewer="next"]').setAttribute('aria-disabled', String(page === pages.length - 1));
+      controls.querySelector('[data-viewer="out"]').setAttribute('aria-disabled', String(zoom === 100));
+      controls.querySelector('[data-viewer="in"]').setAttribute('aria-disabled', String(zoom === 300));
+    };
+    controls.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-viewer]');
+      if (!button || button.getAttribute('aria-disabled') === 'true') return;
+      switch (button.dataset.viewer) {
+        case 'previous': page = Math.max(0, page - 1); break;
+        case 'next': page = Math.min(pages.length - 1, page + 1); break;
+        case 'in': zoom = Math.min(300, zoom + 25); break;
+        case 'out': zoom = Math.max(100, zoom - 25); break;
+        case 'fit': zoom = 100; break;
+      }
+      update();
+      viewport.scrollTo(0, 0);
+    });
+    update();
+    controls.hidden = false;
+  });
+
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-navigation');
   const themeButton = document.querySelector('.theme-toggle');
