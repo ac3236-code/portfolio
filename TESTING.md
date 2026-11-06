@@ -87,3 +87,16 @@ The current site contains no form, input fields, submit handler, or JavaScript f
 ## Recording browser results
 
 For each executed case replace Blocked with Pass or Fail, the observed behavior, browser version, viewport, theme, and date. For T19, T24, T29, T34, and T39 include the actual Lighthouse scores and report locations. Do not reuse historical scores as current results. Existing historical evidence and limits are recorded separately in docs/accessibility-review.md.
+
+## Performance remediation — November 5, 2026
+
+Baseline: owner-supplied lighthouse/page-before.json for live index.html: Performance 88, Accessibility 100, Best Practices 100, SEO 100. These are historical scores, not results for these changes.
+
+- Cumulative Layout Shift, Layout shift culprits, Avoid large layout shifts: main#main was flagged (0.206). The shared script now establishes the enhanced header before body parsing; CSS reserves hidden controls and initially collapses enhanced mobile navigation. Initialization no longer changes the header's intended dimensions. The same load order applies to all five pages. Theme selection also runs before first paint. No colors, fonts, or final layouts changed.
+- Total Blocking Time and Max Potential First Input Delay: the report's long tasks are attributed to the document or Unattributable, primarily Other, rather than a specific script function. Preventing the header relayout may reduce work, but these metrics are not established as fixed. Further changes require a fresh trace.
+- Use efficient cache lifetimes: unchanged. The live response headers set ten-minute lifetimes; HTML/CSS/JS cannot override server Cache-Control headers. This checkout has no hosting header configuration. No speculative cache-busting or service worker was added.
+- Network dependency tree and Render-blocking requests: unchanged CSS request. Keeping shared CSS render-blocking preserves styled first paint and the no-JavaScript fallback without duplicating styles inline. The small shared script now also blocks parsing to prevent the header shift; this tradeoff needs a measured rerun. No claimed network-timing improvement.
+
+Validation: JavaScript syntax compiled with Node vm.Script. Twelve simulated-DOM scenarios covered initialization at 390, 760, 761, and 1440px with unset/light/dark stored preferences, menu click, mobile Escape, and theme toggle. All passed. All five pages have exactly one h1, the intended script/style order, and existing relative link/asset targets. git diff --check passed. These simulations do not establish rendered layout, CSS behavior, real keyboard operation, or contrast. Existing palette/focus rules were retained.
+
+Browser/Lighthouse blocker: browser inventory reported "The browser access host is unavailable"; the native Chrome fallback returned "Accessibility state unavailable for window 2884814." No new Lighthouse run, screenshot comparison, mobile/desktop layout test, real keyboard test, or rendered contrast test completed. After deployment, rerun Lighthouse on live index.html with the baseline settings and save lighthouse/page-after.json; compare CLS, TBT, maximum potential FID, and all category scores, and execute the pending manual cases above. Accessibility must remain at least 90. Do not treat the baseline score as post-change validation.

@@ -146,3 +146,12 @@ button:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
   .contact { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
   .contact aside { border-top: 0; border-left: 1px solid var(--line); margin: 0 0 0 30px; padding: 0 0 0 30px; }
 }
+
+/* Reserve controls and collapse navigation before the first enhanced paint.
+   Without JavaScript, navigation stays expanded and controls stay hidden. */
+.enhanced .theme-toggle[hidden] { display: block !important; visibility: hidden; }
+@media (max-width: 760px) {
+  .enhanced .menu-toggle[hidden] { display: block !important; visibility: hidden; }
+  .enhanced #main-navigation { display: none; }
+  .enhanced .header:has(.menu-toggle[aria-expanded="true"]) #main-navigation { display: flex; }
+}

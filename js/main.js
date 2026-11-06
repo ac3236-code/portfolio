@@ -1,4 +1,14 @@
+// Set the initial header and theme before the stylesheet/body are parsed.
 (() => {
+  const root = document.documentElement;
+  let preference;
+  try { preference = localStorage.getItem('portfolio-theme'); } catch { /* Storage may be unavailable. */ }
+  const dark = preference === 'dark' || (preference !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  root.dataset.theme = dark ? 'dark' : 'light';
+  root.classList.add('enhanced');
+})();
+
+document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.project-viewer').forEach((viewer) => {
     const pages = [...viewer.querySelectorAll('.pdf-page')];
     const controls = viewer.querySelector('.viewer-controls');
@@ -91,4 +101,4 @@
       if (preference !== 'dark' && preference !== 'light') applyTheme(systemTheme.matches);
     });
   }
-})();
+});
