@@ -13,6 +13,7 @@ A responsive portfolio built with plain HTML and CSS for a biomedical engineerin
 - `js/main.js`: responsive menu and light/dark mode controls.
 - `docs/accessibility-review.md`: contrast results, audit limits, and browser checklist.
 - `TESTING.md`: site test cases, recorded source-check results, and pending browser acceptance checks.
+- `lighthouse/`: folder for saved Lighthouse reports; `.gitkeep` tracks the empty folder.
 
 ## Local preview
 
